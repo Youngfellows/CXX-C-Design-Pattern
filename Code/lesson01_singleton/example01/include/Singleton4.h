@@ -6,7 +6,7 @@
 //定义名称空间
 namespace single
 {
-    //懒汉式单例模式 - 线程非安全
+    //懒汉式单例模式 - 线程安全
     class Singleton4
     {
         private:
