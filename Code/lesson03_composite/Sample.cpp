@@ -27,7 +27,38 @@ void test1()
 void test2()
 {
     cout << "test2():: ..." << endl;
+
+    //组合图
+    CompoundGraphic *all = new CompoundGraphic();
+
+    //添加子图
+    Dot *d1 = new Dot(1,2);
+    Circle *c1 = new Circle(5,2,3);
+
+    CompoundGraphic *childGraphic = new CompoundGraphic();
+    Dot *d2 = new Dot(4,7);
+    Dot *d3 = new Dot(3,2);
+    childGraphic->add(0,d2);
+    childGraphic->add(1,d3);
+
+    //将所有图添加到组合图中
+    all->add(0,d1);
+    all->add(1,c1);
+    all->add(2,childGraphic);
+
+    //移动
+    all->move2somewhere(8,9);
+
+    //绘制
+    all->draw();
+
     cout << endl;
+    //释放内存
+    delete all;
+    delete c1;
+    delete d1;
+    delete d2;
+    delete d3;
 }
 
 void test3()

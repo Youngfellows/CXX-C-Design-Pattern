@@ -3,6 +3,9 @@
 
 #include "./SubMenu.h"
 #include "./CompositMenu.h"
+#include "./Dot.h"
+#include "./Circle.h"
+#include "./CompoundGraphic.h"
 
 //定义接口
 void test1();
