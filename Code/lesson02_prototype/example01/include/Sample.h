@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Resume.h"
+#include "./Cat.h"
+#include "./Email.h"
 
 //定义接口
 void test1();

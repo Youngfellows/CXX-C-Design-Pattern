@@ -20,7 +20,7 @@ class Resume : public IResume
         virtual  ~Resume();//析构函数
         void setInfo(int age,string sex);//设置信息
         void setWorkExperience(string timeArea,string company);//设置工作经历
-        virtual IResume * clone();//克隆对象
+        virtual Resume * clone();//克隆对象
         virtual void display();//显示
 };
 

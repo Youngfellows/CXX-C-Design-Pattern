@@ -14,6 +14,7 @@ Resume::Resume(string name)//构造函数
 Resume::~Resume()//析构函数
 {
     cout << "~Resume()析构函数" << endl;
+    cout << endl;
 }
 
 void Resume::setInfo(int age,string sex)//设置信息
@@ -30,7 +31,7 @@ void Resume::setWorkExperience(string timeArea,string company)//设置工作经�
     this->company = company;
 }
 
-IResume * Resume::clone()//克隆对象
+Resume * Resume::clone()//克隆对象
 {
     cout << "setWorkExperience():: ..." << endl;
     //创建对象,动态申请内存
