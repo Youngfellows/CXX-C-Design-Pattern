@@ -5,7 +5,7 @@
 #include "./Fruit.h"
 
 /**
- * @brief 抽象工厂类 - 生产水果的工厂
+ * @brief 抽象工厂模式 - 生产水果的工厂 - 生产的是一个产品族
  * 
  */
 class AbsFruitFactory
@@ -18,12 +18,17 @@ class AbsFruitFactory
        virtual ~AbsFruitFactory();
 
        /**
-        * @brief 根据类型生产产品 - 创建水果
+        * @brief 根据类型生产产品 - 创建苹果
         * 
-        * @param type 类型
         * @return Fruit* 水果指针变量
         */
-       virtual Fruit * create() = 0;
+       virtual Fruit * createApple() = 0;
        
+        /**
+        * @brief 根据类型生产产品 - 创建香蕉
+        * 
+        * @return Fruit* 水果指针变量
+        */
+       virtual Fruit * createBanana() = 0;
 };
 #endif
