@@ -6,6 +6,8 @@
 #include "./Dot.h"
 #include "./Circle.h"
 #include "./CompoundGraphic.h"
+#include "./File.h"
+#include "./Directory.h"
 
 //定义接口
 void test1();

@@ -52,19 +52,69 @@ void test2()
     //绘制
     all->draw();
 
-    cout << endl;
     //释放内存
     delete all;
     delete c1;
     delete d1;
     delete d2;
     delete d3;
+    cout << endl;
 }
 
 void test3()
 {
     cout << "test3():: ..." << endl;
+    //组和模式 - 动态申请内存
+    Directory *root = new Directory("root");
+    Directory *bin = new Directory("bin");
+    Directory *tmp = new Directory("tmp");
+    Directory *usr = new Directory("usr");
+
+    //添加子结点
+    root->add(bin);
+    root->add(tmp);
+    root->add(usr);
+
+    //添加文件
+    bin->add(new File("vi",3000));
+    bin->add(new File("latex", 2000));
+
+    //打印
+    static_cast<IFile *>(root)->display();
+
+    Directory *yuki = new Directory("yuki");
+    Directory *hanako = new Directory("hanako");
+    Directory *tomura = new Directory("tomura");
+    usr->add(yuki);
+    usr->add(hanako);
+    usr->add(tomura);
+    yuki->add(new File("diary.html", 100));
+    hanako->add(new File("memo.tex", 1024));
+    tomura->add(new File("junk.mail", 40));
+
+    static_cast<IFile *>(root)->display();
+    // for test coverage
+    {
+        File *f = new File("123.txt", 1);
+        f->add(root);
+        f->display("");
+        delete f;
+    }
+    {
+        yuki->display("");
+    }
+    {
+        File *f = new File("123.txt", 1);
+        IFile *e = new Directory("test");
+        e->add(f);
+        e->display("");
+        e->toString();
+        delete e;
+    }
+
     cout << endl;
+    //释放内存
+    delete root;
 }
 
 
