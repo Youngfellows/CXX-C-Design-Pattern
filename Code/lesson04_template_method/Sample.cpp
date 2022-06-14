@@ -37,12 +37,37 @@ void test2()
 void test3()
 {
     cout << "test3():: ..." << endl;
+    //存款
+    BankTemplateMethod *deposit = new Deposit();
+    deposit->process();
+    delete deposit;
+
+    //取款
+    BankTemplateMethod *withdraw = new Withdraw();
+    withdraw->process();
+    delete withdraw;
+
+    //转账
+    BankTemplateMethod *transfer = new Transfer();
+    transfer->process();
+    delete transfer;
+
     cout << endl;
 }
 
 void test4()
 {
     cout << "test4():: ..." << endl;
+    //泡咖啡
+    CaffeineBeverage *coffee = new Coffee();
+    coffee->prepareRecipe();
+    delete coffee;
+
+    //泡茶叶
+    CaffeineBeverage *tea = new Tea();
+    tea->prepareRecipe();
+    delete tea;
+
     cout << endl;
 }
 
