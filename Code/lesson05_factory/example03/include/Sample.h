@@ -2,6 +2,12 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./AppleFactory.h"
+#include "./BananaFactory.h"
+#include "./AddFactory.h"
+#include "./SubFactory.h"
+#include "./MulFactory.h"
+#include "./DivFactory.h"
 
 //定义接口
 void test1();
