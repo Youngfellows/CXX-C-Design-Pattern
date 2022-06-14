@@ -3,6 +3,7 @@
 
 #include "./Global.h"
 #include "./FruitFactory.h"
+#include "./OperationFactory.h"
 
 //定义接口
 void test1();
