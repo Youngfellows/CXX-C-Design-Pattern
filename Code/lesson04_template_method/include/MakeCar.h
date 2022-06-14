@@ -36,6 +36,8 @@ class MakeCar
          * 
          */
         void make();
+
+        virtual ~MakeCar() = default;
 };
 
 #endif

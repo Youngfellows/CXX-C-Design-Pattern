@@ -5,10 +5,10 @@ void test1()
     cout << "test1():: ..." << endl;
      //模板方法模式
     //创建对象,动态申请内存
-    Jeep *jeep = new Jeep();
+    MakeCar *jeep = new Jeep();
     jeep->make();
 
-    Mercedes *mercedes = new Mercedes();
+    MakeCar *mercedes = new Mercedes();
     mercedes->make();
 
     cout << endl;
