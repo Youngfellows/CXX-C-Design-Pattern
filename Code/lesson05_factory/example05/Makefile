@@ -5,7 +5,7 @@ VERSION = 1.0.0
 CPP = g++
 
 # 隐含规则: 指定编译选项
-CPPFLAGS = -Wall -std=c++11
+CPPFLAGS = -Wall -std=c++14
 
 #最终生成目录
 ODIR=obj
