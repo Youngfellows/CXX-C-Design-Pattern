@@ -10,6 +10,8 @@ CPPFLAGS = -Wall -std=c++14
 #最终生成目录
 ODIR=obj
 OHSARE_DIR = "./share/"
+FACTORY_DIR = "./share/factory/"
+PRODUCT_DIR = "./share/product/"
 
 #全部.cpp文件
 SRCS_MAIN = $(wildcard *.cpp)
@@ -46,5 +48,7 @@ clean:
 	rm -rf $(ODIR)
 	rm -rf *.o
 	rm -rf $(OHSARE_DIR)*.o 
+	rm -rf $(FACTORY_DIR)*.o 
+	rm -rf $(PRODUCT_DIR)*.o 
 
 .PHONY: clean
