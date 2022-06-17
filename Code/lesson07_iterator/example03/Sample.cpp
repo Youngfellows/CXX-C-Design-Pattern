@@ -7,7 +7,7 @@ void test1()
     AA<int> tmp1(5, 7);
     AA<int> tmp2 = tmp1 + tmp;
     tmp2.printAA();
-    //cout << tmp2 << endl;
+    cout << tmp2 << endl;
     cout << endl;
 }
 
