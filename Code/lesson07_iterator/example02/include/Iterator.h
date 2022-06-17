@@ -12,7 +12,11 @@ template <typename Item>
 class Iterator
 { 
     public:
-        virtual ~Iterator();
+        virtual ~Iterator()
+        {
+            cout << "~Iterator()析构函数" << endl;
+        }
+
         virtual void first() = 0;//第一个
         virtual void next() = 0;//下一个
         virtual bool isEnd() = 0;//是否最后一个
