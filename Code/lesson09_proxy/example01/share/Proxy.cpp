@@ -2,6 +2,7 @@
 
 Proxy::Proxy(std::shared_ptr<Subject> subject)
 {
+    cout << "Proxy()构造函数" << endl;
     if(nullptr == subject)
     {
         this->subject = std::make_shared<ConcreteSubject>();
@@ -13,6 +14,7 @@ Proxy::Proxy(std::shared_ptr<Subject> subject)
 
 Proxy::~Proxy()
 {
+    cout << "~Proxy()析构函数" << endl;
     if(nullptr != this->subject)
     {
        this->subject = nullptr;
