@@ -15,7 +15,7 @@ class Person
 
     public:
         Person(string name,int age);
-        ~Person();
+        virtual ~Person();
 
         /**
          * @brief 纯虚函数,抽象接口: 打印信息

@@ -14,7 +14,8 @@ Teacher::~Teacher()
 void Teacher::printInfo()
 {
     cout << "======老师信息=======" << endl;
+    cout << "编号:" << this->id << endl;
     cout << "姓名:" << this->name << endl;
     cout << "年龄:" << this->age << endl;
-    cout << "编号:" << this->id << endl;
+
 }
