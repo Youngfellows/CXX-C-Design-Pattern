@@ -2,6 +2,7 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./ShapeMaker.h"
 
 //定义接口
 void test1();
