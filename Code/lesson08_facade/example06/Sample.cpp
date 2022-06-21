@@ -3,6 +3,9 @@
 void test1()
 {
     cout << "test1():: ..." << endl;
+    //外观模式
+    assert(DataBase::GetInstance().getNameByEmail("").empty());
+    PageMaker::GetInstance().makeWelcomePage("zhangsan@zhangsan.com");
     cout << endl;
 }
 
