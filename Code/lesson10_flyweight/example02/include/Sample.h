@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./WebSiteFactory.h"
+#include "./UnShareWebsite.h"
 
 //定义接口
 void test1();

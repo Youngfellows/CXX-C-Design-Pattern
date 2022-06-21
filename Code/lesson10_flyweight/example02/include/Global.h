@@ -2,6 +2,10 @@
 #define GLOBAL_H
 
 #include <iostream>
+#include <string>
+#include <memory>
+#include <map>
+#include <mutex>
 
 using namespace std;
 
