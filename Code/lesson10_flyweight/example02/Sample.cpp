@@ -23,6 +23,8 @@ void test1()
     unShareWebsite->use(user3);
 
     cout << endl;
+    //释放内存
+    delete factory;
 }
 
 void test2()
