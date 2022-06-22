@@ -14,6 +14,7 @@ ShapeFactory::ShapeFactory()
 ShapeFactory::~ShapeFactory()
 {
     cout << "~ShapeFactory()析构函数" << endl;
+    this->circles.clear();
 }
 
 /**
