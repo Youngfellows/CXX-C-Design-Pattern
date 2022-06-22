@@ -2,6 +2,7 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./ToolBox.h"
 
 //定义接口
 void test1();
