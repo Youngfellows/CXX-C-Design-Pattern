@@ -21,12 +21,12 @@ void GreenShapeDecorator::draw()
 
 double GreenShapeDecorator::area()
 {
-    cout << "RedShapeDecorator::area():: ..." << endl;
+    cout << "GreenShapeDecorator::area():: ..." << endl;
     //调用父类函数
     return ShapeDecorator::area();
 }
 
 void GreenShapeDecorator::fillGreen()
 {
-    cout << "RedShapeDecorator::setRedBorder():: 填充绿色 ..." << endl;
+    cout << "GreenShapeDecorator::setRedBorder():: 填充绿色 ..." << endl;
 }
