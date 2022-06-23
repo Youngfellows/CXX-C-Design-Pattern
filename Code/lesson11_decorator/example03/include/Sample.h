@@ -5,6 +5,7 @@
 #include "./Circle.h"
 #include "./Rectangle.h"
 #include "./RedShapeDecorator.h"
+#include "./GreenShapeDecorator.h"
 
 //定义接口
 void test1();
