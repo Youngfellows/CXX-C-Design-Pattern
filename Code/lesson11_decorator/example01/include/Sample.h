@@ -2,6 +2,9 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./RunCar.h"
+#include "./FlyCarDecorator.h"
+#include "./SwimCarDecorator.h"
 
 //定义接口
 void test1();
