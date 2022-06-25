@@ -2,6 +2,9 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Backwards.h"
+#include "./Center.h"
+#include "./Forwards.h"
 
 //定义接口
 void test1();
