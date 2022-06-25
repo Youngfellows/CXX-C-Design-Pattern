@@ -1,5 +1,5 @@
-#ifndef FOREIGN_PLAYER_H
-#define FOREIGN_PLAYER_H
+#ifndef FOREIGN_PLAYER1_H
+#define FOREIGN_PLAYER1_H
 
 #include "./Global.h"
 
@@ -13,6 +13,7 @@ class ForeignPlayer
         string name;//姓名
 
     public:
+        ForeignPlayer() = default;
         ForeignPlayer(string name);
         virtual ~ForeignPlayer() = default;//默认析构函数
 

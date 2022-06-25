@@ -13,6 +13,7 @@ class Player
         string name;//姓名
 
     public:
+        Player() = default;
         Player(string name);
         virtual ~Player() = default;//默认析构函数
 

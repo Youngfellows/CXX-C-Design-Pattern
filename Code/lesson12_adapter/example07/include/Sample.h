@@ -5,6 +5,8 @@
 #include "./Backwards.h"
 #include "./Center.h"
 #include "./Forwards.h"
+#include "./ForeignCenter.h"
+#include "./Translator.h"
 
 //定义接口
 void test1();

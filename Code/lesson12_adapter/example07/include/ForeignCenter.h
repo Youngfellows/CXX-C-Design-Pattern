@@ -1,5 +1,5 @@
-#ifndef FOREIGN_CENTER_H
-#define FOREIGN_CENTER_H
+#ifndef FOREIGN_CENTER2_H
+#define FOREIGN_CENTER2_H
 
 #include "./ForeignPlayer.h"
 
