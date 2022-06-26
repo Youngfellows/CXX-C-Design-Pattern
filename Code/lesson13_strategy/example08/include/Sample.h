@@ -6,6 +6,7 @@
 #include "./BubbleSort.h"
 #include "./InsertionSort.h"
 #include "./SelectionSort.h"
+#include "./ArrayHandler.h"
 
 void test1();
 void test2();
