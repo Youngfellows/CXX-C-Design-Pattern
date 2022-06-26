@@ -9,10 +9,12 @@ void test1()
 
     //创建纳税人信息
     std::unique_ptr<Taxpayer> taxpayer = std::make_unique<Taxpayer>("马云",88888);
+    cout << "中国," << taxpayer->getName() << ",收入:" << taxpayer->getRevenue() << endl; 
 
     //通过客户端调用纳税方法
     double result = client->calculateTax(std::move(taxpayer));
-    cout << "中国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    cout << " test1():: result = " << result << endl;
+    //cout << "中国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
 
     cout << endl;
 }
@@ -29,7 +31,8 @@ void test2()
 
     //通过客户端调用纳税方法
     double result = client->calculateTax(std::move(taxpayer));
-    cout << "美国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    //cout << "美国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    cout << " test2():: result = " << result << endl;
     cout << endl;
 }
 
@@ -45,7 +48,8 @@ void test3()
 
     //通过客户端调用纳税方法
     double result = client->calculateTax(std::move(taxpayer));
-    cout << "法国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    //cout << "法国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    cout << " test3():: result = " << result << endl;
     cout << endl;
 }
 
@@ -61,6 +65,7 @@ void test4()
 
     //通过客户端调用纳税方法
     double result = client->calculateTax(std::move(taxpayer));
-    cout << "德国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    //cout << "德国," << taxpayer->getName() << ",缴纳税额:" << result << endl; 
+    cout << " test4():: result = " << result << endl;
     cout << endl;
 }

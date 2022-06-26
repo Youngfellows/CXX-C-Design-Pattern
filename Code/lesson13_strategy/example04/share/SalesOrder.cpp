@@ -24,7 +24,6 @@ SalesOrder::~SalesOrder()
 double SalesOrder::calculateTax(std::unique_ptr<Taxpayer> taxpayer)
 {
     std::unique_ptr<TaxStrategy> strategy = this->factory->create();
-    cout << "SalesOrder::calculateTax():: strategy=" << endl;
     double result = strategy->calculate(std::move(taxpayer));
     cout << "SalesOrder::calculateTax():: result=" << result << endl;
     return result;
