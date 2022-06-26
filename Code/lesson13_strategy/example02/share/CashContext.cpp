@@ -8,7 +8,7 @@ CashContext::CashContext(string strategy)
         }else if(REBATE.compare(strategy) == 0)
         {
             cashSuper = std::make_unique<CashRebate>(0.9);//9折
-        }else if(RETURN.compare(strategy) == 0)
+        }else if(RETURN.compare(strategy) == 0) 
         {
             cashSuper = std::make_unique<CashReturn>(1000,200);//满1000返回200  
         }
