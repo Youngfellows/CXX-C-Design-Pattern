@@ -2,6 +2,10 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Sort.h"
+#include "./BubbleSort.h"
+#include "./InsertionSort.h"
+#include "./SelectionSort.h"
 
 void test1();
 void test2();
