@@ -13,15 +13,18 @@ void test1()
     UnitedNationsSecurityCouncil *uniteNations = dynamic_cast<UnitedNationsSecurityCouncil *>(mediator);
     if(uniteNations != nullptr)
     {
+        cout << "xxx" << endl;
         uniteNations->setUSA(usa);
         uniteNations->setIraq(iraq);
     }
 
     //美国发布消息
-    usa->declare("不准开发核武器,否则打你 ...");
+    //usa->declare("不准开发核武器,否则打你 ...");
+    mediator->declare(usa,"不准开发核武器,否则打你 ...");
 
     //伊拉克发布消息
-    iraq->declare("他妈的美国去死 ...");
+    //iraq->declare("他妈的美国去死 ...");
+    mediator->declare(iraq,"他妈的美国去死 ...");
 
     //释放内存
     delete iraq;

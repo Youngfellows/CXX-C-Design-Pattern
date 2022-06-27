@@ -28,12 +28,14 @@ void UnitedNationsSecurityCouncil::setIraq(Country *iraq)
  */
 void UnitedNationsSecurityCouncil::declare(Country * country,const std::string & message)
 {
-   cout << "UnitedNationsSecurityCouncil::declare():: 通过联合国发布消息 ..." << endl; 
+   //cout << "UnitedNationsSecurityCouncil::declare():: 通过联合国发布消息 ..." << endl; 
    this->declare1(country,message);//方式1发布消息
+   this->declare2(country,message);//方式2发布消息
 }
 
 void UnitedNationsSecurityCouncil::declare1(Country * country,const std::string & message)
 {
+    //cout << "UnitedNationsSecurityCouncil::declare1():: " << endl;
     const USA *usa_ = dynamic_cast<const USA *>(country);
     const Iraq *iraq_ = dynamic_cast<const Iraq *>(country);
     if(nullptr != usa_)
@@ -59,6 +61,7 @@ void UnitedNationsSecurityCouncil::declare1(Country * country,const std::string 
 
 void UnitedNationsSecurityCouncil::declare2(Country * country,const std::string & message)
 {
+    //cout << "UnitedNationsSecurityCouncil::declare2():: " << endl;
     if(this->usa != nullptr)
     {
         if(this->usa == country)
