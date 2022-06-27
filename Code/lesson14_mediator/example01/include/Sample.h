@@ -2,6 +2,9 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./ColleagueA.h"
+#include "./ColleagueB.h"
+#include "./ConcreteMediator.h"
 
 void test1();
 void test2();
