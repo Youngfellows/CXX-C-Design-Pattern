@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./User.h"
+#include "./ChatRoom.h"
 
 void test1();
 void test2();
