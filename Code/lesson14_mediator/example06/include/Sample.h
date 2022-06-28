@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Mediator.h"
+#include "./CColleague.h"
 
 void test1();
 void test2();
