@@ -2,6 +2,10 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Agency.h"
+#include "./Landlord.h"
+#include "./Tenant.h"
+#include "./Mediator.h"
 
 void test1();
 void test2();
