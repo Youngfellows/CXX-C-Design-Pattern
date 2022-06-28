@@ -2,7 +2,7 @@
 
 /**
  * @brief 构造函数
- * 
+ *
  * @param mediator 中介者对象
  * @param id ID号
  */
@@ -14,7 +14,7 @@ Colleague::Colleague(Mediator *mediator, unsigned int id)
 
 /**
  * @brief 获取ID号
- * 
+ *
  * @return unsigned int 返回ID号
  */
 unsigned int Colleague::getId()
