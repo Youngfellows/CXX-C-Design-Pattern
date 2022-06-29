@@ -15,7 +15,7 @@ private:
 
 public:
     CColleague(int id);
-    ~CColleague();                                                      //默认析构函数
+    ~CColleague();                                                                //默认析构函数
     virtual void receiveMsg(IColleague *sender, const std::string &msg) override; //实现receiveMsg()函数
     virtual void sendMsg(IColleague *receiver, const std::string &msg) override;  //实现sendMsg()函数
     virtual void setMediator(IMediator *mediator) override;                       //实现sendMsg()函数
