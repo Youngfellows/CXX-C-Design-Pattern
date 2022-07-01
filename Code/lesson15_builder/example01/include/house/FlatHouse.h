@@ -7,7 +7,7 @@
  * @brief 派生类: 公寓
  *
  */
-class FlatsHouse : public House
+class FlatHouse : public House
 {
 private:
     std::string name;   //名字
@@ -18,8 +18,8 @@ private:
     std::string roof;   //屋顶
 
 public:
-    FlatsHouse(std::string name);
-    ~FlatsHouse();
+    FlatHouse(std::string name);
+    ~FlatHouse();
     virtual void setGround(std::string ground) override;
     virtual void setWall(std::string wall) override;
     virtual void setWindow(std::string window) override;

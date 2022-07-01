@@ -1,6 +1,8 @@
 #ifndef BUILDER_H
 #define BUILDER_H
 
+#include "./House.h"
+
 /**
  * @brief 抽象类: 建造者抽象类
  *
@@ -44,6 +46,13 @@ public:
      *
      */
     virtual void buildRoof() = 0;
+
+    /**
+     * @brief 获取建造的房子
+     * 
+     * @return std::shared_ptr<House> 返回建造的房子
+     */
+    virtual std::shared_ptr<House> getHouse() = 0; 
 };
 
 #endif
