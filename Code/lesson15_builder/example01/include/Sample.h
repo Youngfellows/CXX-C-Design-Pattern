@@ -2,6 +2,7 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Builder.h"
 #include "./HouseDirector.h"
 #include "./builder/FlatBuilder.h"
 #include "./builder/SkyscrapersBuilder.h"

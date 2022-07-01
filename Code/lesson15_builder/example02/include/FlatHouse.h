@@ -1,7 +1,7 @@
 #ifndef FLATS_HOUSE_H
 #define FLATS_HOUSE_H
 
-#include "../House.h"
+#include "./House.h"
 
 /**
  * @brief 派生类: 公寓

@@ -1,4 +1,4 @@
-#include "../../include/house/FlatHouse.h"
+#include "../include/FlatHouse.h"
 
 FlatHouse::FlatHouse(std::string name)
 {
