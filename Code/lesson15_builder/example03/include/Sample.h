@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Director.h"
+#include "./TextBuilder.h"
 
 void test1();
 void test2();
