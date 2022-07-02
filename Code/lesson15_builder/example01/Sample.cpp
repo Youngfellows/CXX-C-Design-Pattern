@@ -95,9 +95,10 @@ void test5()
     //建造者模式
     // std::shared_ptr<House> House = std::make_shared<FlatHouse>("顺丰公寓");
     std::shared_ptr<Builder> builder = std::make_shared<WoodenBuilder>();          //木屋建造队
-    std::shared_ptr<Director> director = std::make_shared<HouseDirector>(builder); //设计师
+    std::shared_ptr<Director> director = std::make_shared<HouseDirector>(); //设计师
+    director->setBuilder(builder);//为设计师设置工程队
     director->construct();                                                         //设置师赋值建造逻辑
-    std::shared_ptr<House> house = builder->getHouse();                            //获取建造好的房子
+    std::shared_ptr<House> house = director->getHouse();                            //获取建造好的房子
     std::string ground = house->getGround();                                       //获取地板
     std::string window = house->getWindow();                                       //获取窗户
     std::string wall = house->getWall();                                           //获取墙壁
