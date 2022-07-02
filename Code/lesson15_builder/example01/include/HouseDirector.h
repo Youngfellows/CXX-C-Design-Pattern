@@ -11,7 +11,7 @@
 class HouseDirector : public Director
 {
 private:
-    std::shared_ptr<Builder> builder = nullptr; //房子建造者
+    std::shared_ptr<Builder> builder; //房子建造者
 
 public:
     HouseDirector(std::shared_ptr<Builder> builder);

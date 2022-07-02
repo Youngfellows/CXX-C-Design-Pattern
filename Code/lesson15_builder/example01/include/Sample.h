@@ -2,9 +2,9 @@
 #define SAMPLE_H
 
 #include "./Global.h"
-#include "./Builder.h"
-#include "./HouseDirector.h"
+#include "./house/FlatHouse.h"
 #include "./builder/FlatBuilder.h"
+#include "./HouseDirector.h"
 #include "./builder/SkyscrapersBuilder.h"
 #include "./builder/StoneBuilder.h"
 #include "./builder/VillaBuilder.h"
@@ -14,5 +14,6 @@ void test1();
 void test2();
 void test3();
 void test4();
+void test5();
 
 #endif

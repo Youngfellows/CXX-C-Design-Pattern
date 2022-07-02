@@ -15,9 +15,11 @@ BUILDER_DIR = "./share/builder/"
 
 #全部.cpp文件
 SRCS_MAIN = $(wildcard *.cpp)
-SRCS_SHARE = $(wildcard $(OHSARE_DIR)*.cpp)
-SRCS_SHARE_1 = $(wildcard $(HOUSE_DIR)*.cpp)
-SRCS_SHARE_2 = $(wildcard $(BUILDER_DIR)*.cpp)
+SRCS_SHARE = $(wildcard ./share/*.cpp)
+SRCS_SHARE_1 = $(wildcard ./share/house/*.cpp)
+SRCS_SHARE_2 = $(wildcard ./share/builder/*.cpp)
+# SRCS_SHARE_1 = $(wildcard $(HOUSE_DIR)*.cpp)
+# SRCS_SHARE_2 = $(wildcard $(BUILDER_DIR)*.cpp)
 
 #编译最终目标
 TARGET = test_sample.out

@@ -1,6 +1,5 @@
 #include "../../include/builder/FlatBuilder.h"
 
-
 FlatBuilder::FlatBuilder()
 {
     cout << "FlatBuilder()构造函数" << endl;
