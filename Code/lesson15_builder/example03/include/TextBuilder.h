@@ -5,7 +5,7 @@
 
 /**
  * @brief 派生类: 文本创建者
- * 
+ *
  */
 class TextBuilder : public IBuilder
 {
@@ -15,6 +15,7 @@ private:
 public:
     TextBuilder() = default;
     ~TextBuilder() = default;
+
     void makeTitle(const std::string &title) override
     {
         m_str.append("============================\n");
