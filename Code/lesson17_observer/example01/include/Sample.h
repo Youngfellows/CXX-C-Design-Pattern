@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./subject/Secretary.h"
+#include "./observer/PlayserObserver.h"
 
 void test1();
 void test2();
