@@ -10,7 +10,6 @@ PlayserObserver::PlayserObserver(std::string name, ISubject *subject) : IObserve
 {
     cout << "PlayserObserver()构造函数" << endl;
     this->name = name;
-    this->subject = subject;
 }
 
 PlayserObserver::~PlayserObserver()
