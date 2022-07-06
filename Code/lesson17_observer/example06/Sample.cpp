@@ -16,6 +16,20 @@ void test1()
     }
 
     cout << endl;
+    cout << "移除观察者 ---- ^_^ ----" << endl;
+    cout << endl;
+
+    //移除观察者
+    subject->deleteObserver(digitObserver.get());
+
+    //被观察者数据变化
+    numGen = dynamic_cast<NumGen *>(subject.get()); //类型转化
+    if (numGen != nullptr)
+    {
+        numGen->excute(); //数据变化
+    }
+
+    cout << endl;
 }
 
 void test2()
