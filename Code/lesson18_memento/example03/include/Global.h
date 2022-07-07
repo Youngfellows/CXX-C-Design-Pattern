@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <memory>
+#include <vector>
+#include <random>
 
 using namespace std;
 
