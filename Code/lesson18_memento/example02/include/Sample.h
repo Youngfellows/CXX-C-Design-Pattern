@@ -2,6 +2,9 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./Editor.h"
+#include "./Snapshot.h"
+#include "./CareTaker.h"
 
 void test1();
 void test2();
