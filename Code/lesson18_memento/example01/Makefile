@@ -10,8 +10,8 @@ CPPFLAGS = -Wall -std=c++14
 #最终生成目录
 ODIR=obj
 OHSARE_DIR = "./share/"
-FACTORY_DIR = "./share/factory/"
-PRODUCT_DIR = "./share/product/"
+# FACTORY_DIR = "./share/factory/"
+# PRODUCT_DIR = "./share/product/"
 
 #全部.cpp文件
 SRCS_MAIN = $(wildcard *.cpp)
