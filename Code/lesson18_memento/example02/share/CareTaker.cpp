@@ -37,7 +37,7 @@ void CareTaker::undo()
         if (!this->history->empty())
         {
             std::shared_ptr<Memento> memento = this->history->back(); //获取最近一次历史备份数据
-            this->originator->resotre(memento);              //恢复数据
+            this->originator->resotre(memento);                       //恢复数据
             this->history->pop_back();                                //把备份数据从历史记录表中删除
         }
     }
@@ -54,7 +54,7 @@ void CareTaker::rollback(unsigned int index)
         if ((!this->history->empty()) && (index < this->history->size()))
         {
             std::shared_ptr<Memento> memento = this->history->at(index);                                                    //获取第index次历史备份数据
-            this->originator->resotre(memento);                                                                    //恢复数据
+            this->originator->resotre(memento);                                                                             //恢复数据
             this->history->erase(std::remove(this->history->begin(), this->history->end(), memento), this->history->end()); //把备份数据从历史记录表中删除
         }
     }
