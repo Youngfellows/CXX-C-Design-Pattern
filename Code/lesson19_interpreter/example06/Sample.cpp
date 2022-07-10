@@ -10,11 +10,21 @@ void test1()
     Constant c(1024);
     ctx.registerVariable(&a, 22);
     ctx.registerVariable(&b, 11);
+
+    cout << "a=" << ctx.lookUpValue(&a) << endl;
+    cout << "b=" << ctx.lookUpValue(&b) << endl;
+
     Expression *e1 = new Mul(&a, &b); // 242
-    Expression *e2 = new Div(&a, &b); // 1
-    Expression *e3 = new Add(e2, &c); // 1025
-    Expression *e = new Sub(e1, e3);
-    std::cout << e->interpret(&ctx) << std::endl;
+    cout << "result=" << e1->interpret(&ctx) << endl;
+
+    Expression *e2 = new Div(&a, &b); // 2
+    cout << "result=" << e2->interpret(&ctx) << endl;
+
+    Expression *e3 = new Add(e2, &c); // 1026
+    cout << "result=" << e3->interpret(&ctx) << endl;
+
+    Expression *e = new Sub(e1, e3);//242 - 1026
+    std::cout << "result=" << e->interpret(&ctx) << std::endl;
 
     delete e1, e2, e3, e;
 
