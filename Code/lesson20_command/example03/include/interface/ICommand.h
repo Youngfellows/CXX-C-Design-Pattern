@@ -24,10 +24,4 @@ public:
      */
     virtual void makingBarbecue() = 0;
 };
-
-ICommand::ICommand(std::shared_ptr<IBarbecuer> barbecure)
-{
-    this->barbecure = barbecure;
-}
-
 #endif
