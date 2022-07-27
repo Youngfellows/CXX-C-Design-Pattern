@@ -12,14 +12,14 @@ ODIR=obj
 OHSARE_DIR = "./share/"
 RECEIVER_DIR = "./share/receiver/"
 COMMAND_DIR = "./share/command/"
-INVORKER_DIR = "./share/invorker/"
+INVORKER_DIR = "./share/invoker/"
 
 #全部.cpp文件
 SRCS_MAIN = $(wildcard *.cpp)
 SRCS_SHARE = $(wildcard ./share/*.cpp)
 SRCS_SHARE_1 = $(wildcard ./share/receiver/*.cpp)
 SRCS_SHARE_2 = $(wildcard ./share/command/*.cpp)
-SRCS_SHARE_3 = $(wildcard ./share/invorker/*.cpp)
+SRCS_SHARE_3 = $(wildcard ./share/invoker/*.cpp)
 
 #编译最终目标
 TARGET = test_sample.out
