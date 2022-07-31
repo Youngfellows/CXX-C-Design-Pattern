@@ -1,15 +1,12 @@
 #ifndef OPERATION_H
 #define OPERATION_H
 
-namespace state
+typedef enum
 {
-    typedef enum
-    {
-        RESUME = 0,
-        TIMEOUT,
-        NEEDIO,
-        FINISHIO
-    } Operation;
-}
+    RESUME = 0,
+    TIMEOUT,
+    NEEDIO,
+    FINISHIO
+} Operation;
 
 #endif

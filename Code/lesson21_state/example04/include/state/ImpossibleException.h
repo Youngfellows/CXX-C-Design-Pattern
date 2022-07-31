@@ -3,18 +3,15 @@
 
 #include "../Global.h"
 
-namespace state
+/**
+ * @brief 异常类
+ *
+ */
+class ImpossibleException
 {
-    /**
-     * @brief 异常类
-     *
-     */
-    class ImpossibleException
-    {
-    public:
-        ImpossibleException();
-        ~ImpossibleException();
-    };
-}
+public:
+    ImpossibleException();
+    ~ImpossibleException();
+};
 
 #endif

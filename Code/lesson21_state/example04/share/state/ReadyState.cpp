@@ -1,7 +1,5 @@
 #include "../../include/state/ReadyState.h"
 
-using namespace state;
-
 ReadyState::ReadyState(IProcess *process, std::string name) : IState(name)
 {
     cout << "ReadyState()构造函数" << endl;

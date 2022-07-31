@@ -1,7 +1,5 @@
 #include "../../include/state/BlockedState.h"
 
-using namespace state;
-
 BlockedState::BlockedState(IProcess *process, std::string name) : IState(name)
 {
     cout << "BlockedState()构造函数" << endl;
