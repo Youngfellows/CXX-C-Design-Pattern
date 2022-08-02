@@ -13,7 +13,7 @@ class PrimaryState : public AbstractState
 {
 private:
 public:
-    // explicit PrimaryState(AbstractState *state);
+    explicit PrimaryState(AbstractState *state);
     explicit PrimaryState(IForumAccount *account);
     ~PrimaryState();
     virtual void downloadFile(int score) override; //覆写downloadFile()函数

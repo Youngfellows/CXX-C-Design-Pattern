@@ -13,7 +13,7 @@ class MiddleState : public AbstractState
 {
 private:
 public:
-    // explicit MiddleState(AbstractState *state);
+    explicit MiddleState(AbstractState *state);
     explicit MiddleState(IForumAccount *account);
     ~MiddleState();
     virtual void writeNote(int score) override; //覆写writeNote()函数

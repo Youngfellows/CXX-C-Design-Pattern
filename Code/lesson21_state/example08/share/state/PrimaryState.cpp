@@ -1,11 +1,11 @@
 #include "../../include/state/PrimaryState.h"
 
-// PrimaryState::PrimaryState(AbstractState *state)
-// {
-//     this->account = state->getAccount();
-//     this->point = state->getPoint();
-//     this->stateName = "新手";
-// }
+PrimaryState::PrimaryState(AbstractState *state)
+{
+    this->account = state->getAccount();
+    this->point = state->getPoint();
+    this->stateName = "新手";
+}
 
 PrimaryState::PrimaryState(IForumAccount *account)
 {
@@ -28,11 +28,11 @@ void PrimaryState::checkState()
 {
     if (this->point >= 1000)
     {
-        // this->account->setState(std::make_shared<HighState>(this));
-        this->account->setState(new HighState(this->account));
+        //特别注意,这里是多态的使用
+        this->account->setState(std::make_shared<HighState>(this));
     }
     else if (this->point >= 100)
     {
-        // this->account->setState(std::make_shared<MiddleState>(this));
+        this->account->setState(std::make_shared<MiddleState>(this));
     }
 }

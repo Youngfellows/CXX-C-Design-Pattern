@@ -13,7 +13,7 @@ class HighState : public AbstractState
 {
 private:
 public:
-    // explicit HighState(AbstractState *state);
+    explicit HighState(AbstractState *state);
     explicit HighState(IForumAccount *account);
     ~HighState();
     virtual void writeNote(int score) override;    //覆写writeNote()函数

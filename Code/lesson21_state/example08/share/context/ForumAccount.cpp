@@ -5,6 +5,7 @@ ForumAccount::ForumAccount(std::string nickName, std::string email)
     cout << "ForumAccount()构造函数" << endl;
     this->nickName = nickName;
     this->email = email;
+    this->state = std::make_shared<PrimaryState>(this);
     cout << this->nickName << ":" << this->email << ",账户注册成功 ..." << endl;
 }
 
@@ -13,12 +14,12 @@ ForumAccount::~ForumAccount()
     cout << "~ForumAccount()析构函数" << endl;
 }
 
-void ForumAccount::setState(IState *state)
+void ForumAccount::setState(std::shared_ptr<IState> state)
 {
     this->state = state;
 }
 
-IState *ForumAccount::getState()
+std::shared_ptr<IState> ForumAccount::getState()
 {
     return this->state;
 }
@@ -40,10 +41,10 @@ void ForumAccount::downloadFile(int score)
 
 void ForumAccount::writeNote(int score)
 {
-    this->writeNote(score);
+    this->state->writeNote(score);
 }
 
 void ForumAccount::replyNote(int score)
 {
-    this->replyNote(score);
+    this->state->replyNote(score);
 }

@@ -16,10 +16,10 @@ class IState
 public:
     virtual ~IState() = default;
     virtual void checkState() = 0;                       //检查状态
-    virtual void setPoint(int point) = 0;                //设置积分
-    virtual int getPoint() = 0;                          //获取积分
     virtual void setStateName(std::string name) = 0;     //设置状态名称
     virtual std::string getStateName() = 0;              //获取状态名称
+    virtual void setPoint(int point) = 0;                //设置积分
+    virtual int getPoint() = 0;                          //获取积分
     virtual void setAccount(IForumAccount *account) = 0; //设置账户
     virtual IForumAccount *getAccount() = 0;             //获取账户
     virtual void downloadFile(int score) = 0;            //下载文件

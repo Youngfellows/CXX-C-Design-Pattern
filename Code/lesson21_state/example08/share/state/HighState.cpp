@@ -39,10 +39,10 @@ void HighState::checkState()
 {
     if (this->point < 100)
     {
-        // this->account->setState(std::make_shared<PrimaryState>(this));
+        this->account->setState(std::make_shared<PrimaryState>(this));
     }
     else if (this->point < 1000)
     {
-        // this->account->setState(std::make_shared<MiddleState>(this));
+        this->account->setState(std::make_shared<MiddleState>(this));
     }
 }

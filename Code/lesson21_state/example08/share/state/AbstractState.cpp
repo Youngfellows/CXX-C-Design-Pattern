@@ -20,6 +20,11 @@ std::string AbstractState::getStateName()
     return this->stateName;
 }
 
+void AbstractState::setAccount(IForumAccount *account)
+{
+    this->account = account;
+}
+
 IForumAccount *AbstractState::getAccount()
 {
     return this->account;

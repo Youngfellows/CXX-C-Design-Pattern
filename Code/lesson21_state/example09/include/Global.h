@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 #include <memory>
-#include <cstdio>
 
 using namespace std;
 
