@@ -10,16 +10,16 @@ CPPFLAGS = -Wall -std=c++14
 #最终生成目录
 ODIR=obj
 OHSARE_DIR = "./share/"
-STATE_DIR = "./share/state/"
-CONTEXT_DIR = "./share/context/"
-# INVORKER_DIR = "./share/invorker/"
+VISITOR_DIR = "./share/visitor/"
+ELEMENT_DIR = "./share/element/"
+STRUCTURE_DIR = "./share/structure/"
 
 #全部.cpp文件
 SRCS_MAIN = $(wildcard *.cpp)
 SRCS_SHARE = $(wildcard ./share/*.cpp)
-SRCS_SHARE_1 = $(wildcard ./share/state/*.cpp)
-SRCS_SHARE_2 = $(wildcard ./share/context/*.cpp)
-# SRCS_SHARE_3 = $(wildcard ./share/invorker/*.cpp)
+SRCS_SHARE_1 = $(wildcard ./share/visitor/*.cpp)
+SRCS_SHARE_2 = $(wildcard ./share/element/*.cpp)
+SRCS_SHARE_3 = $(wildcard ./share/structure/*.cpp)
 
 #编译最终目标
 TARGET = test_sample.out
@@ -32,8 +32,8 @@ _DEPS_SHARE_2 = $(patsubst %.cpp, %.o,$(SRCS_SHARE_2))
 _DEPS_SHARE_3 = $(patsubst %.cpp, %.o,$(SRCS_SHARE_3))
 
 #指定编译文件
-# OBJS = $(_DEPS_MAIN) $(_DEPS_SHARE) $(_DEPS_SHARE_1) $(_DEPS_SHARE_2) $(_DEPS_SHARE_3)
-OBJS = $(_DEPS_MAIN) $(_DEPS_SHARE) $(_DEPS_SHARE_1) $(_DEPS_SHARE_2)
+OBJS = $(_DEPS_MAIN) $(_DEPS_SHARE) $(_DEPS_SHARE_1) $(_DEPS_SHARE_2) $(_DEPS_SHARE_3)
+# OBJS = $(_DEPS_MAIN) $(_DEPS_SHARE) $(_DEPS_SHARE_1) $(_DEPS_SHARE_2)
 # OBJS = $(_DEPS_MAIN) $(_DEPS_SHARE)
 
 all:$(TARGET)
@@ -53,8 +53,8 @@ clean:
 	rm -rf $(ODIR)
 	rm -rf *.o
 	rm -rf $(OHSARE_DIR)*.o 
-	rm -rf $(STATE_DIR)*.o
-	rm -rf $(CONTEXT_DIR)*.o
-#	rm -rf $(INVORKER_DIR)*.o
+	rm -rf $(VISITOR_DIR)*.o
+	rm -rf $(ELEMENT_DIR)*.o
+	rm -rf $(STRUCTURE_DIR)*.o
 
 .PHONY: clean
