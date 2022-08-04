@@ -49,5 +49,5 @@ void File::printList(std::string str)
  */
 void File::accept(std::shared_ptr<IVisitor> visitor)
 {
-    visitor->visit(shared_from_this()); //让访问者访问文件
+    visitor->visitFile(shared_from_this()); //让访问者访问文件
 }

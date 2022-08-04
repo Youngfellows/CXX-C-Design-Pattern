@@ -65,7 +65,7 @@ void Directory::addEntry(std::shared_ptr<Entry> entry)
  */
 void Directory::accept(std::shared_ptr<IVisitor> visitor)
 {
-    visitor->visit(shared_from_this()); //让访问者访问目录
+    visitor->visitDir(shared_from_this()); //让访问者访问目录
 }
 
 std::shared_ptr<std::vector<std::shared_ptr<Entry>>> Directory::getEntryList()
