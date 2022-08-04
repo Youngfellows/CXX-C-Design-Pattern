@@ -2,6 +2,8 @@
 #define SAMPLE_H
 
 #include "./Global.h"
+#include "./element/File.h"
+#include "./element/Directory.h"
 
 void test1();
 void test2();
